@@ -1,0 +1,31 @@
+/* navbar */
+.mainNavbar{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    margin-bottom: 2cm;
+    width: 100%;
+    background-color: white;
+  }
+  .lin{
+    padding-top: 1.2cm;
+    height: 1cm;
+    transition: 500ms;
+    
+  }
+  .logo{
+    width: 3cm;
+    height: 3cm;
+  }
+  .lin a{
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .inpt{
+    width: 6cm;
+    height: 1cm;
+    font-size: 1.15rem;
+  }
+  
+  
+  /* ======================= */

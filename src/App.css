@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
-}
+.register{
+    width: 15cm;
+    display: flex;
+    justify-content: center;
+    padding: 5% ;
+    margin: 5% auto;
+    border: solid black;
+    box-shadow: 2px 2px 2px 2px black;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.signin{
+    background-color: white;
+    
+    height: auto;
+   
+    border-radius: 8%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .inUp{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
   }
-  to {
-    transform: rotate(360deg);
+  .FormField {
+    margin-bottom: 40px;
   }
-}
+  .FormField__Label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1em;
+    color:black;
+  }
+  .FormField__Input {
+    width: 85%;
+    background-color: transparent;
+    border: none;
+    color: black;
+    outline: none;
+    border-bottom: 1px solid #445366;
+    font-size: 1em;
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  .FormField a{
+    color: #66707D;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1.5px solid #225E62;
+    padding-bottom: 5px;
+  }
+  .FormField__CheckboxLabel {
+    color: #646F7D;
+    font-size: .9em;
+  }
+  .FormField__CheckboxLabel {
+    color: #646F7D;
+    font-size: .9em;
+  }
+  .FormField_Button{
+    width: 3cm;
+  }
+  .FormField .btnBtn{
+    margin-top: 4.3cm;
+  }

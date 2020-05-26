@@ -1,0 +1,45 @@
+.image{
+    width: 8cm;
+    height: 6cm;
+    border-bottom: 2px solid black;
+
+}
+.poster{
+    width: 8cm;
+    margin: 1cm;
+    border: 2px solid black;
+
+}
+.mainposter{
+    margin-top: 2cm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.buttonmadd{
+    display: flex;
+    justify-content: space-around;
+}
+.buttonmadd button{
+    margin: 1cm;
+    width: 3cm;
+    height: 1cm;
+    background-color: tomato;
+}
+.titreDuFilm{
+    text-align: center;
+}
+.main{
+    text-align: center;
+    padding: 5%;
+}
+.btnAjouter{
+    width: 6cm;
+    height: 1cm;
+    background-color: tomato;
+}
+.description p{
+    text-align: justify ;
+    padding: 5%;
+}

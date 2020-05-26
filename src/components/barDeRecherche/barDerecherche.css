@@ -1,0 +1,17 @@
+/* bar de recherche */
+
+.barDeRecherche{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20%;
+  }
+  
+  .btn{
+    background-color: rgb(102, 4, 4);
+    width: 3cm;
+    height: 1cm;
+    color: wheat;
+    font-size: 1.15rem;
+  }
+  
