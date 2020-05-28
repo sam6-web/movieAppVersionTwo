@@ -7,19 +7,22 @@ import React, { Component } from 'react'
         const{arrays}=this.props
         const favoriteList = arrays.map(x => {
             return(                        
-                <div className="poster" key={Math.random()} >
-                    <div>
-                        <img className="image" src={x.img}></img>
-                    </div>
-                    <div className='titreDuFilm'>
-                        <h3> {x.title} </h3>
-                    </div>
-                                
-                </div>                      
+                <div>
+                    <div className="poster" key={Math.random()} >                    
+                        <div>
+                            <img className="image" src={x.img}></img>
+                        </div>
+                        <div className='titreDuFilm'>
+                            <h3> {x.title} </h3>
+                        </div>                        
+                    </div>    
+                </div>                  
             )})
           
         return(
           <div className="mainposter">
+              
+
             {favoriteList}
           </div>
         )

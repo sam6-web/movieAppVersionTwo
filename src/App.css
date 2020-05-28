@@ -1,5 +1,5 @@
 .register{
-    width: 15cm;
+    width: 10cm;
     display: flex;
     justify-content: center;
     padding: 5% ;
@@ -62,3 +62,26 @@
   .FormField .btnBtn{
     margin-top: 4.3cm;
   }
+  .homePage{
+    background-color: w;
+    padding: 5%;
+    
+}
+.imghome{
+    width: 8cm;
+    height: 8cm;
+    ;
+    border: solid white;
+    
+}
+.titleEtP h1 {
+    color: black;
+}
+.titleEtP h4 {
+    color:black;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  margin: 0 10%;
+}

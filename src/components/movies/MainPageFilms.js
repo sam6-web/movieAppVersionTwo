@@ -5,14 +5,24 @@ import './mainPageMovie.css'
      constructor(props) {
          super(props)
      
-         this.state = {            
+         this.state = {    
+             loading:true,        
             ModalShow:false,
             showImage:true,
-         }  
+         }      
      }
+     componentDidMount = ()=>{
+         setTimeout(()=>{
+            this.setState({
+                loading:false
+            })
+         },3000)
+     }
+     
      /* function for description button plus de detaille */
         showDescription = (x) => {
             this.setState({
+                
                 ModalShow: true,
                 showImage:false
             }) 
@@ -29,7 +39,8 @@ import './mainPageMovie.css'
         const {rechercheParName,addNewMovie,Films,addToFavorit,tt,getRate,star,value} = this.props
         return (
             <div className="main">
-                
+                {this.state.loading?<div class="loader"></div>:
+                <div>
                 <button className="btnAjouter" onClick={()=>addNewMovie({title: prompt('ajouter le titre du film '),
                                                                          img: prompt("ajouter un lien de l'image"),                                                                
                                                                     })} >ajouter</button>
@@ -81,6 +92,8 @@ import './mainPageMovie.css'
                     )
                     })}                    
                 </div>
+                </div>}
+                
                 
                 
             </div>

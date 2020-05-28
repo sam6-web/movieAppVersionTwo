@@ -4,10 +4,18 @@ class Register extends Component {
     constructor(){
         super()
         this.state = {
+          loading:true,     
            
             
         }
       }
+      componentDidMount = ()=>{
+        setTimeout(()=>{
+           this.setState({
+               loading:false
+           })
+        },3000)
+    }
       
    
     
@@ -16,7 +24,9 @@ class Register extends Component {
     render() {
         const{s,handleChangeName,handleChangePassWord,handleChangeEmail,log,changeInputEmail,changeInputPassword,clickSignUp,sh,inputEmail,inputPassword}=this.props
         return (
-            <div className="register">
+            <div className="flex">
+              <Home />
+                <div className="register">
                   <div className="signin">
                     <form onSubmit={this.handleSubmit} className="FormFields">
                         <div className="FormField">
@@ -58,14 +68,37 @@ class Register extends Component {
                         <div> {inputPassword} </div>
                       </div>
                       <div className="FormField">
-                          <button className="FormField_Button" onClick={clickSignUp}>Sign in</button> 
-                          <button className='btnBtn' onClick={s}>show me movies</button>                      
-                      </div>
+                          <button className="FormField_Button" onClick={clickSignUp,s}>Sign in</button> 
+{/*                           <button className='btnBtn' onClick={s}>show me movies</button>                      
+ */}                      </div>
                     </form>
                   </div>    
                 </div>
+            </div>
+            
         )
     }
 }
+
+
+ function Home() {
+  return (
+    <div>
+
+                <div className="homePage">
+                  <div className="titleEtP">
+                      <h1>Welcome Movie Box App </h1>
+                      <h4>Download / Watch <br></br>
+                          Any HD movie or TV-Show on your smart device for Free</h4>
+                  </div>
+                  <div className="titleEtP">
+                      <img className="imghome" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSyLT8DduoAnTuUmVsmy8rttNl4b0t25E12H5Lzg1JLKPQWVt8w&usqp=CAU"></img>
+                  </div>                                
+                </div>
+
+    </div>
+  )
+}
+
 
 export default Register
